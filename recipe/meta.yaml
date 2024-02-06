@@ -1,5 +1,5 @@
 {% set name = "haystack-ai" %}
-{% set version = "2.0.0b5" %}
+{% set version = "2.0.0b6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/haystack_ai-{{ version }}.tar.gz
-  sha256: e1e1b7085f19813f7016c944aee8d84394ddeb138677fd3a35e44eb9dd05a028
+  sha256: b276f400939d6603d1cd2825a81641f20928f4ad5307dfe31679da948782aef2
 
 build:
   noarch: python
