@@ -32,14 +32,14 @@ Current release info
 Installing haystack-ai
 ======================
 
-Installing `haystack-ai` from the `conda-forge/label/haystack-ai_rc` channel can be achieved by adding `conda-forge/label/haystack-ai_rc` to your channels with:
+Installing `haystack-ai` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
 
 ```
-conda config --add channels conda-forge/label/haystack-ai_rc
+conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge/label/haystack-ai_rc` channel has been enabled, `haystack-ai` can be installed with `conda`:
+Once the `conda-forge` channel has been enabled, `haystack-ai` can be installed with `conda`:
 
 ```
 conda install haystack-ai
@@ -54,26 +54,26 @@ mamba install haystack-ai
 It is possible to list all of the versions of `haystack-ai` available on your platform with `conda`:
 
 ```
-conda search haystack-ai --channel conda-forge/label/haystack-ai_rc
+conda search haystack-ai --channel conda-forge
 ```
 
 or with `mamba`:
 
 ```
-mamba search haystack-ai --channel conda-forge/label/haystack-ai_rc
+mamba search haystack-ai --channel conda-forge
 ```
 
 Alternatively, `mamba repoquery` may provide more information:
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search haystack-ai --channel conda-forge/label/haystack-ai_rc
+mamba repoquery search haystack-ai --channel conda-forge
 
 # List packages depending on `haystack-ai`:
-mamba repoquery whoneeds haystack-ai --channel conda-forge/label/haystack-ai_rc
+mamba repoquery whoneeds haystack-ai --channel conda-forge
 
 # List dependencies of `haystack-ai`:
-mamba repoquery depends haystack-ai --channel conda-forge/label/haystack-ai_rc
+mamba repoquery depends haystack-ai --channel conda-forge
 ```
 
 
@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@masci](https://github.com/masci/)
+* [@silvanocerza](https://github.com/silvanocerza/)
 
