@@ -32,8 +32,11 @@ requirements:
     - pyyaml
     - more-itertools
     - networkx
-    - typing-extensions
-    - boilerpy3
+    - typing-extensions >=4.7
+    - trafilatura
+    - requests
+    - numpy
+    - python-dateutil
 
 test:
   imports:
