@@ -22,7 +22,6 @@ requirements:
   run:
     - python >=3.8
     - pandas
-    - haystack-bm25
     - tqdm
     - tenacity
     - lazy-imports
@@ -32,8 +31,10 @@ requirements:
     - pyyaml
     - more-itertools
     - networkx
-    - typing-extensions
-    - boilerpy3
+    - typing-extensions >=4.7
+    - requests
+    - numpy
+    - python-dateutil
 
 test:
   imports:
