@@ -1,5 +1,5 @@
 {% set name = "haystack-ai" %}
-{% set version = "2.2.2" %}
+{% set version = "2.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/haystack_ai-{{ version }}.tar.gz
-  sha256: 4c5205985b9648f516e03e37dc3df6efa4e2abf8397df159eeaa94b3280ffd66
+  sha256: bb557de9a6e32c8d2ada0fe6877ba313e330f030d15da0dfbd4bf76e80b8fcb4
 
 build:
   noarch: python
@@ -33,7 +33,7 @@ requirements:
     - networkx
     - typing-extensions >=4.7
     - requests
-    - numpy
+    - numpy <2.0.0
     - python-dateutil
 
 test:
