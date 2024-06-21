@@ -33,7 +33,7 @@ requirements:
     - networkx
     - typing-extensions >=4.7
     - requests
-    - numpy
+    - numpy < 2.0.0
     - python-dateutil
 
 test:
