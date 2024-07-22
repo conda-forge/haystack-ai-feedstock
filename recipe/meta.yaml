@@ -31,10 +31,10 @@ requirements:
     - pyyaml
     - more-itertools
     - networkx
-    - typing-extensions >=4.7
     - requests
     - numpy <2.0.0
     - python-dateutil
+    - haystack-experimental
 
 test:
   imports:
