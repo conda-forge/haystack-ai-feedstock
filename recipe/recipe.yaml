@@ -19,11 +19,11 @@ build:
 
 requirements:
   host:
-    - python >=3.8,<3.13
+    - python >=${{ python_min }},<3.13
     - hatchling >=1.8.0
     - pip
   run:
-    - python >=3.8,<3.13
+    - python >=${{ python_min }},<3.13
     - pandas
     - tqdm
     - tenacity
