@@ -1,26 +1,29 @@
-{% set name = "haystack-ai" %}
-{% set version = "2.7.0" %}
+schema_version: 1
+
+context:
+  name: haystack-ai
+  version: 2.9.0
 
 package:
-  name: {{ name|lower }}
-  version: {{ version }}
+  name: ${{ name|lower }}
+  version: ${{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/haystack_ai-{{ version }}.tar.gz
-  sha256: b950bbba229c3cb036cf4db1726bea8c8d1ca8c8b7a9afe27225394e55c6ba65
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
+  sha256: ffaf32a8d1a3b15e5f6dc9277670f7167d2651f8c0c778178649b20c693f3dcd
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - python >=3.8
+    - python >=${{ python_min }},<3.13
     - hatchling >=1.8.0
     - pip
   run:
-    - python >=3.8
+    - python >=${{ python_min }},<3.13
     - pandas
     - tqdm
     - tenacity
@@ -33,24 +36,23 @@ requirements:
     - networkx
     - typing-extensions >=4.7
     - requests
-    - numpy <2.0.0
+    - numpy
     - python-dateutil
     - haystack-experimental
 
-test:
-  imports:
-    - haystack
-  commands:
-    - pip check
-  requires:
-    - pip
+tests:
+  - python:
+      imports:
+        - haystack
+      pip_check: true
 
 about:
-  home: https://github.com/deepset-ai/haystack
   summary: LLM framework to build customizable, production-ready LLM applications. Connect components (models, vector DBs, file converters) to pipelines or agents that can interact with your data.
   license: Apache-2.0
   license_file: LICENSE
+  homepage: https://github.com/deepset-ai/haystack
 
 extra:
   recipe-maintainers:
     - julian-risch
+    - moritzwilksch
