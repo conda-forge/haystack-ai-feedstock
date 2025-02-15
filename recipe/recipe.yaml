@@ -35,6 +35,7 @@ requirements:
     - pyyaml
     - more-itertools
     - networkx
+    - openapi-llm
     - typing-extensions >=4.7
     - requests
     - numpy
