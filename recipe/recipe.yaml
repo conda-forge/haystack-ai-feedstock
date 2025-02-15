@@ -30,6 +30,7 @@ requirements:
     - lazy-imports
     - openai >=1.1.0
     - jinja2
+    - jsonschema
     - posthog
     - pyyaml
     - more-itertools
