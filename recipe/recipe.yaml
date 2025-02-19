@@ -39,6 +39,8 @@ requirements:
     - numpy
     - python-dateutil
     - haystack-experimental
+    - openapi-llm >=0.4.1
+    - jsonschema
 
 tests:
   - python:
