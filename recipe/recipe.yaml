@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: haystack-ai
-  version: "2.10.2"
+  version: "2.10.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
-  sha256: 9e9f434b14b42cd226b641913e704f06709f3c25ca1dd6ed8f1cc5de63f7ce7b
+  sha256: ea3684b01c555f63e1def4ac4fd12f6b5caaf1671b4114cf190d74697df61353
 
 build:
   number: 0
