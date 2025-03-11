@@ -24,7 +24,6 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }},<3.13
-    - pandas
     - tqdm
     - tenacity
     - lazy-imports
@@ -39,7 +38,6 @@ requirements:
     - numpy
     - python-dateutil
     - haystack-experimental
-    - openapi-llm >=0.4.1
     - jsonschema
 
 tests:
