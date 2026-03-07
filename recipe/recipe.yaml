@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - docstring-parser
+    - docstring_parser
     - filetype
     - haystack-experimental
     - jinja2
