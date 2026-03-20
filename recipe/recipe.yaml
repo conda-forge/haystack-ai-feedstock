@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: haystack-ai
-  version: 2.26.0
+  version: 2.26.1
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
-  sha256: 7a782c27847cb0e20fb091934bd7003c50bd9afa45c38625fb962d3bdbfb2daf
+  sha256: 3d3105604dce7796466615424b2130e2fe29ba8046e6f37853cac91d7f83f90c
 
 build:
   number: 0
@@ -42,6 +42,7 @@ requirements:
     - tenacity !=8.4.0
     - tqdm
     - typing_extensions >=4.7
+    - markupsafe
 tests:
   - python:
       python_version: ${{ python_min }}.*
