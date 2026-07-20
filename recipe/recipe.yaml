@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: haystack-ai
-  version: "2.31.0"
+  version: 3.0.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
-  sha256: e9fc0ae5d651bd2d92b54f08cd77ed501dbbdbaf0c7abc1d4392ebe2f01d3332
+  sha256: c948a337e7a53d9bc47f3c08c2ad5e52ca6bd44956ad6d9e3512209a056493b4
 
 build:
   number: 0
@@ -26,7 +26,6 @@ requirements:
     - python >=${{ python_min }}
     - docstring_parser
     - filetype
-    - haystack-experimental
     - jinja2
     - jsonschema
     - lazy-imports
