@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: haystack-ai
-  version: 3.0.0
+  version: 3.1.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/haystack_ai-${{ version }}.tar.gz
-  sha256: c948a337e7a53d9bc47f3c08c2ad5e52ca6bd44956ad6d9e3512209a056493b4
+  sha256: 6e1368cbb11c70a5dac5977455503212108a9adcf69cc57aca2832071ae1e577
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - more-itertools
     - networkx
     - numpy
-    - openai >=1.99.2
+    - openai >=2.6.0
     - posthog !=3.12.0
     - pydantic
     - python-dateutil
